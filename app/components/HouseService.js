@@ -1,11 +1,18 @@
 import House from "../models/house.js";
 
 
-let _house = [new House(3400, 'White', 1991)]
+let _houses = [
+    new House({size: '3,400 Sq ft', color: "White", year: 1991}),
+    new House({size: '1,800 Sq ft', color: "Navy Blue", year: 2010})
+]
 
 
 export default class HouseService{  
     constructor(){
-        console.log('service says hi', _house)
+        console.log('service says hi', _houses)
+    }
+
+    get Houses(){
+        return _houses.map(house => new House(house))
     }
 }
