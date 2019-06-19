@@ -18,4 +18,19 @@ export default class HouseController{
         console.log('Controller says HI')
         drawHouses()
     }
+
+    addHouse(e){
+        e.preventDefault()
+        let form = e.target
+
+        let newHouse = {
+            size: form.size.value,
+            color: form.color.value,
+            year: form.year.value
+        }
+
+        _houseService.addHouse(newHouse)
+        form.reset()
+        drawHouses()
+    }
 }

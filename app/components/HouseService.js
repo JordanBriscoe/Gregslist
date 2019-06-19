@@ -15,4 +15,8 @@ export default class HouseService{
     get Houses(){
         return _houses.map(house => new House(house))
     }
+
+    addHouse(newHouse){
+        _houses.push(new House(newHouse))
+    }
 }

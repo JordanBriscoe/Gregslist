@@ -12,9 +12,23 @@
 
 <body>
     <div class="container">
+        <div class="row">
+        </div>
+    </div>
+    <div class="container">
         <div id="houses" class="row">
             
         </div>
+        <form onsubmit="app.controller.houseController.addHouse(event)">
+            <label for="size">Size</label>
+            <input type="text" name="size" placeholder="Size" required>
+            <label for="color">Color</label>
+            <input type="text" name="color" placeholder="Color" required>
+            <label for="year">Year</label>
+            <input type="text" name="year" placeholder="Year" required>
+            <button type="submit" class="btn btn-warning">Add House</button>
+
+        </form>
     </div>
 
     
