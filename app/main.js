@@ -1,4 +1,4 @@
-
+import HouseController from "./components/HouseController.js"
 
 
 class App{
@@ -9,4 +9,4 @@ class App{
     }
 }
 
-window["app"] = new App
+window["app"] = new App()
