@@ -30,7 +30,7 @@ export default class HouseController{
         }
 
         _houseService.addHouse(newHouse)
-        form.reset()
         drawHouses()
+        form.reset()
     }
 }
